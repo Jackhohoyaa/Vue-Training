@@ -3,6 +3,7 @@ import {ref} from "vue";
 import Icon from "./Icon.vue";
 import Main from "./Main.vue";
 import Elements from "./Elements.vue";
+import Api from "./Api.vue";
 let checked = ref(true);
 
 const mouseover = () => {
@@ -13,6 +14,7 @@ const mouseover = () => {
 
 <template>
   <Icon></Icon>
+  <Api></Api>
   <Main color="white" backgroundColor="gray" title="這是標題" :checked="checked" @update:checked="checked = $event" />
   <Elements @mouseover="mouseover"></Elements>
 </template>
